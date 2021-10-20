@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-primary:#667eea;
+    --color-secondary:#764ba2;
+    --bottom-padding: 20px 40px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0;
+    max-width: 1200px;
+}
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+.hero{
+    height: 100vh;
+    background-image: url('../img/index/reciclar_ppal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+.hero a{
+    color: white;
+    text-decoration: none;
+}
+.logo_nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+}
+.navigation ul li a:hover{
+    color: #00fa71;
+}
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+/* About */
+
+.about{
+   min-height: 400px;
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   row-gap: 80px;
+   justify-items: center;
+   align-items: center;
+}
+.about__img{
+    text-align: center;
+}
+.about__img--left{
+    text-align: left;
+}
+.about__picture{
+    max-width: 80%;
+}
+.about__paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* Footer */
+
+footer {
+
+    background: #004b22;
+    text-align: center;
+    padding: 25px 0 10px 0;
+    color: white;
+
+}
+
+.nav_menu a {
+    text-decoration: none;
+}
+
+.nav_menu ul li {
+    display: inline-block;
+}
+
+.nav_menu ul li a {
+    color: white;
+    display: block;
+    padding: 0.5rem 0.5rem;
+    transition: all 0.4s linear;
+}
+
+.nav_menu ul li a:hover {
+    color: #d3cc00;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
