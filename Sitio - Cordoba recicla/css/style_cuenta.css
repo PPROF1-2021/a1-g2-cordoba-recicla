@@ -19,13 +19,33 @@ header{
     margin: auto;
     margin-top: 20px;
 }
+h1 {
+    font-family: "Poppins", sans-serif;
+  }
+  
+@media (max-width:1024px){
+    .logo{
+        width: 15%;
+    }
+}
+@media (max-width:768px){
+    .logo{
+        width: 20%;
+    }
+}
+@media (max-width:425px){
+    .logo{
+        width: 30%;
+    }
+}
+
 .contenedor{
     width: 100%;
     padding: 15px;
 }
 .formulario{
     background: #fff;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 3px;
 }
 h1{

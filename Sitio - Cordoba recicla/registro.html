@@ -1,46 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8"> 
-	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-    <link rel="shortcut icon" href="img/ico/ico.jpg" type="image/x-icon">
-	<link rel="stylesheet" href="css/style_cuenta.css">
-    <title>CBA recicla</title>
-</head>  
-<body>
-    <header>
-        <a href= "index.html"><img src="img/ico/logo_cuenta.png" alt="logo_inicio" class="logo"></a>
-    </header>
- <form class="formulario">
-    
-    <h1>Registrarse</h1>
-     <div class="contenedor">
-     
-     <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" placeholder="Nombre Completo">
-         
-         </div>
-         
-         <div class="input-contenedor">
-         <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico">
-         
-         </div>
-         
-         <div class="input-contenedor">
-        <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
-         
-         </div>
-         <input type="submit" value="Registrate" class="button">
-         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-         <p>¿Ya tienes una cuenta?<a class="link" href="login.html">Iniciar Sesion</a></p>
-     </div>
-    </form>
-
-    <h2 class="titulo-final">&copy; Córdoba recicla 2021 | Todos los derechos reservados.</h2>
-    
-</body>
+   <head>
+	 <meta charset="UTF-8">
+     <title>Cba recicla - Registro</title>
+     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+     <meta name="description" content="Encuentra información sobre reciclaje y los puntos de reciclaje activos en la ciudad de Córdoba.">
+     <meta name="keywords" content="reciclar, reciclaje, verde, cordoba, capital, puntos verdes, centro reciclaje">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="shortcut icon" href="img/ico/ico.jpg" type="image/x-icon">
+     <link rel="stylesheet" href="css/style_cuenta.css">
+  </head>  
+  <body>
+     <header>
+          <a href= "index.html"><img src="img/ico/logo_cuenta.png" alt="logo_inicio" class="logo"></a>
+     </header>
+     <section id="register" class="mb-5">
+          <div class="container">
+               <div class="row">
+                  <div class="col-xs-12 col-sm-6 com-md-4 mx-auto">
+                     <div class="card_register">
+                          <div class="card">
+                             <div class="card-body text-center">
+                                <form class="row g-3 needs-validation" action="datos"  novalidate>
+                                      <div class="col-xs-12 col-sm-6 com-md-4 mx-auto text-center pt-1 pb-3" style="color: black;">
+                                           <h1 class="h3 mb-3 font-weight-normal color-title"><strong>Registrarse</strong></h1>
+                                       </div>
+                                      <div class="form-group pt-2 pb-1">
+                                          <label class="color-title pt-2 pb-2"> Nombre/s </label>
+                                          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" minlength="2" required/>
+                                          <div class="valid-feedback"> Campo correcto  </div>
+                                            <div class="invalid-feedback"> Complete los datos</div>
+                                        </div>
+                                      <div class="form-group pt-2 pb-1">
+                                          <label class="color-title pt-2 pb-2"> Apellido/s </label> 
+                                          <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido" minlength="2"required/>
+                                          <div class="valid-feedback"> Campo correcto  </div>
+                                          <div class="invalid-feedback"> Complete los datos</div>
+                                        </div>
+                                      <div class="form-group pt-2 pb-1">
+                                          <label class="color-title pt-2 pb-2"> Fecha de nacimiento </label>
+                                           <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control" placeholder="Fecha de nacimiento"  required/>
+                                          <div class="valid-feedback"> Campo correcto  </div>
+                                          <div class="invalid-feedback"> Complete los datos</div>
+                                        </div>
+                                      <div class="form-group pt-2 pb-1">
+                                          <label class="color-title pt-2 pb-2">DNI</label> <input type="text" id="dni" name="dni" class="form-control" placeholder="DNI" pattern="[0-9]{8}"  required/>
+                                          <div class="valid-feedback"> Campo correcto  </div>
+                                          <div class="invalid-feedback"> Complete los datos</div>
+                                        </div>
+                                      <div class="form-group pt-2 pb-1">
+                                          <label class="color-title pt-2 pb-2"> Email </label><input type="email" id="email" name="mail" class="form-control" placeholder="Email" required/>
+                                          <div class="valid-feedback"> Campo correcto  </div>
+                                          <div class="invalid-feedback"> Complete los datos</div>
+                                        </div>
+                                      <div class="form-group pt-2 pb-1">
+                                          <label class="color-title pt-2 pb-2">Contraseña</label> 
+                                          <input type="password" id="contrasena" name="contrasena" class="form-control" placeholder="Contraseña" minlength="4" maxlength="16" required/>
+                                          <div class="valid-feedback"> Campo correcto  </div>
+                                          <div class="invalid-feedback"> Complete los datos</div>
+                                        </div>
+                                      <div class="form-group pt-2 pb-1">
+                                          <label class="color-title pt-2 pb-2"> Teléfono </label>
+                                          <input
+                                          type="text"
+                                          id="telefono"
+                                          name="telefono"
+                                          class="form-control"
+                                          placeholder="Telefono"
+                                          pattern="[0-9]{10}"
+                                         
+                                          required/>
+                                          <div class="valid-feedback"> Campo correcto  </div>
+                                          <div class="invalid-feedback"> Complete los datos</div>
+                                        </div>
+                                      <div class="form-group pt-2 pb-1">
+                                          <label class="color-title pt-2 pb-2">País</label>
+                                          <input
+                                          type="text"
+                                            id="pais"
+                                            name="pais"
+                                            class="form-control"
+                                            placeholder="Pais"
+                                            maxlength="40"
+                                            required
+                                            />
+                                            <div class="valid-feedback"> Campo correcto  </div>
+                                            <div class="invalid-feedback"> Complete los datos</div>
+                                       </div>
+                                       <div class="form-group pt-2 pb-1">
+                                            <label class="color-title pt-2 pb-2">Provincia</label>
+                                            <input
+                                            type="text"
+                                            id="provincia"
+                                            name="provincia"
+                                            class="form-control"
+                                            placeholder="Provincia"
+                                            maxlength="40"
+                                            required
+                                            />
+                                            <div class="valid-feedback"> Campo correcto  </div>
+                                            <div class="invalid-feedback"> Complete los datos</div>
+                                        </div>
+                                       <div class="form-group pt-2 pb-4">
+                                            <label class="color-title pt-2 pb-2">Ciudad</label>
+                                            <input
+                                            type="text"
+                                            id="ciudad"
+                                            name="ciudad"
+                                            class="form-control"
+                                            placeholder="Ciudad"
+                                            maxlength="40"
+                                            required
+                                            />
+                                            <div class="valid-feedback"> Campo correcto  </div>
+                                            <div class="invalid-feedback"> Complete los datos</div>
+                                      </div>
+                                      <div>
+                                            <button type="submit" class="btn btn-lg w-100 btn-registrar btn-block button" onclick="enviar()">Registrarse</button>
+                                            <p class="pt-2"> Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+                                            <p> ¿Ya tienes una cuenta? <a class="link" href="login.html"> Iniciar Sesion</a></p>
+                                      </div>
+                                 </form>
+                             </div>
+                           </div>
+                      </div>
+                   </div>
+               </div>
+           </div>
+  
+       </section> 
+       <script src="js/funcionesGrupo99.js"></script>
+      <footer>
+          <h2 class="titulo-final">&copy; Córdoba recicla 2021 | Todos los derechos reservados.</h2>
+       </footer> 
+   </body>
 </html>
