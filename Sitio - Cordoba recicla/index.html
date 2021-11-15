@@ -90,33 +90,56 @@
            </section>
             <!-- FIN CUERPO PRINCIPAL-->
             <!-- INICIO FORMULARIO-->
-            <div class="container contact-form pt-5">
-                <form method="post">
+            <div class="container-sm contact-form pt-5">
+                <form method="">
                     <h1 class="text-center p-5 fs-1 border-top border-3" style="color: #667eea;">Contacto</h1>
-                   <div class="row">
-                        <div class="col-md-6">
+                    <div class="row" style="text-align: center;">
+                        <div class="col-sm-8">
                             <div class="form-group p-2">
-                                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre *" value="" required/>
-                            </div>
-                            <div class="form-group p-2">
-                                <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Escribe tu apellido *" value="" required/>
+                                <input type="text"name="nombreContacto" id="nombreContacto" class="form-control" placeholder="Escribe tu nombre *" value="" required/>
                             </div>
                             <div class="form-group p-2">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Escribe tu Email *" value="" required/>
+                                <input type="text" name="apellidoContacto" id="apellidoContacto" class="form-control" placeholder="Escribe tu apellido *" value="" required/>
                             </div>
-                            <div class="form-group p-2 pb-5 mt-4">
-                                <input type="submit" name="btnSubmit" class="btnContact" value="Enviar mensaje" />
+                            <div class="form-group p-2">
+                                <input type="email" name="emailContacto" id="emailContacto" class="form-control" placeholder="Escribe tu Email *" value="" required/>
                             </div>
-                        </div>
-                        <div class="col-md-6">
                             <div class="form-group p-2">
                                 <textarea name="descripcion-contacto" id="descripcion-contacto" class="form-control" placeholder="Escribi tu mensaje *" style="width: 100%; height: 150px;" required></textarea>
                             </div>
+                            <div class="form-group p-2 pb-5">
+                                <input type="submit" input type="button" name="btnSubmit" class="btnContact" value="Enviar mensaje" onclick="return tomarDatos()"/>
+                               
+                            </div>                    
                         </div>
                     </div>
                 </form>
-           </div>
+            </div>
         <!-- FIN FORMULARIO-->
+        
+        <!-- SCRIPT JS-->
+        <hr style="height: 20px; margin-bottom: 70px;">
+        <section id="edadSeccion">
+            <h6 style="padding-right: 200px;">Recordá que debes ser mayor de 17 años para usar todas las funcionalidades, solo ingresa tu fecha de nacimiento para saberlo a continuación:</h6>
+               <br>
+            <div class="container sm" id="inputEdad">
+                   <input onclick="habilita()"
+                     type="date"
+                     id="fechanacimiento"
+                     name="fecha_nacimiento"
+                     class="form-control"
+                     style="text-align: center"
+                     placeholder="Fecha de nacimiento"
+                     required
+                   />
+                   <p style="text-align: center;" id="aviso1"></p>
+                 </div>
+                 <div class="container sm">
+                   <button class="btn" onclick="calculaEdad()" id="botonC" disabled="true" style="color: #fff; background-color: #004b22;"><span class="btn-text">Comprobar</span></button>
+                 </div>
+        </section>
+
+        <!-- FIN SCRIPT JS-->
         </main>
         <!-- INICIO FOOTER-->
         <footer class="bg text-center" style="background-color: #004b22;">
@@ -155,6 +178,7 @@
            <div class="text-center p-3 text-white" style="background-color: #004b22;"> Córdoba recicla 2021 | Todos los derechos reservados.</div>
         </footer>
         <!-- FIN FOOTER-->
+        <script src="js/funcionesGrupo02.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    </body>
