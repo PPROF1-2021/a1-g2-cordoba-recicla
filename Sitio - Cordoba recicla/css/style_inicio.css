@@ -53,6 +53,35 @@ header {
 }
 
 
+/* ------------------------------------------------- CALCULO DE  EDAD ------------------------------------------------- */
+#edadSeccion{
+  text-align: center;
+}
+#inputEdad{
+  margin: 30px;
+}
+#fechanacimiento{
+  width: 50%;
+  margin-left: 25%;
+}
+.container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 44px;
+  font-size: 36px;
+  position: relative;
+}
+#aviso1{
+text-align: center;
+}
+
+
 /* ------------------------------------------------------ FOOTER -------------------------------------------------------- */
 
 .footer-hover a{
