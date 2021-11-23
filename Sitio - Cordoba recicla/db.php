@@ -1,6 +1,6 @@
 <?php
 
-$conexion=mysqli_connect("localhost","root","pass","cordoba-recicla");
+$conexion=mysqli_connect("localhost","gabriela","1234","ddl_reciclaje");
 
 
 ?>

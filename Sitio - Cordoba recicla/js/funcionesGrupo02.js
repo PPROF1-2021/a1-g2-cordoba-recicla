@@ -115,7 +115,7 @@ function delayRedirect(){
 		count--;
 		document.getElementById('countDown').innerHTML = count;
 		if (count == 0) {
-			location.href = 'https://voto-electronico-ispc.000webhostapp.com/'; 
+			location.href = 'localhost/cordoba_recicla/index.html'; 
 		}
 	},1000);
   };

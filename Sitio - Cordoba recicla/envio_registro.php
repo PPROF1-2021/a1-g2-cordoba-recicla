@@ -69,16 +69,22 @@ print "\n";
 // Datos conexion y funciones.
 
 
-$conexion=mysqli_connect("localhost","root","pass","cordoba_recicla");
+$conexion=mysqli_connect("localhost","gabriela","1234","ddl_reciclaje");
 
 //INSERT DATOS
 
-$consulta = "INSERT INTO usuario (nombre, apellido, DNI, telefono) VALUES ('$nombre', '$apellido', '$dni' ,'$telefono')";
+$consulta = "INSERT INTO usuario (Nombre, Apellido, Telefono, DNI) VALUES ('$nombre', '$apellido','$telefono', '$dni')";
 
 $ejecutado = mysqli_query($conexion, $consulta);
 
+$lastid = mysqli_insert_id($conexion); 
+
+echo "Ultimo ID : ".$lastid; 
+
 if ($ejecutado == 1){
-  echo "<p><strong>-->Registro completo.<--</strong></p>";
+$consulta2 = "INSERT INTO login (Username, pass, idUsuarioLogin) VALUES ('$correo', '$password', '$lastid')";
+$ejecutado2 = mysqli_query ($conexion, $consulta2);
+echo "<p><strong>-->Registro completo.<--</strong></p>";
 }
 else {
   echo "<p><strong>-->Error de registro.<--</strong></p>";
