@@ -6,7 +6,7 @@ session_start();
 $_SESSION['correo']=$correo;
 
 
-$conexion=mysqli_connect("localhost","root","pass","cordoba_recicla");
+$conexion=mysqli_connect("localhost","gabriela","1234","ddl_reciclaje");
 
 $consulta="SELECT*FROM login where userName='$correo' and password='$contrasena'";
 $resultado=mysqli_query($conexion,$consulta);
